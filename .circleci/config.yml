@@ -1,0 +1,14 @@
+jobs:
+  say hi:
+    docker:
+    - image: bash:4.4.19
+    steps:
+    - checkout
+
+workflows:
+  version: 2
+  say hi:
+    jobs:
+    - say hi
+
+version: 2
